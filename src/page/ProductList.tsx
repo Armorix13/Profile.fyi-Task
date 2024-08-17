@@ -18,7 +18,7 @@ const ProductList: React.FC = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://44.196.8.152:5000/api/product');
+                const response = await axios.get('https://44.196.8.152:5000/api/product');
                 if (response.status !== 200) {
                     throw new Error('Network response was not ok');
                 }
