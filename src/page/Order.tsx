@@ -1,8 +1,7 @@
-// src/components/Order.tsx
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../redux/store'; // Update this import to match your store file path
-import './Order.css'; // Import the external CSS file
+import { RootState } from '../redux/store';
+import './Order.css';
 
 type CartItem = {
     id: number;

@@ -76,10 +76,12 @@
 .loadingText {
   font-size: 1.5rem;
   color: #007bff;
+  /* Add a spinner animation here if desired */
 }
 
 .errorContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -88,7 +90,24 @@
 .errorText {
   font-size: 1.5rem;
   color: red;
+  margin-bottom: 20px;
 }
+
+.retryButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.retryButton:hover {
+  background-color: #0056b3;
+}
+
 .flexitem {
   display: flex;
+  flex-direction: column;
 }
