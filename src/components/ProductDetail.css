@@ -1,0 +1,133 @@
+/* Container styling */
+.product-detail-container {
+  padding: 1rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Grid styling */
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Image container styling */
+.image-container {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.image-container:hover .product-image {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay-text {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Text styling */
+.product-title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+.product-description {
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+/* Button styling */
+.button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.add-to-cart {
+  background-color: #2563eb;
+}
+
+.add-to-cart:hover {
+  background-color: #1d4ed8;
+}
+
+.buy-now {
+  background-color: #16a34a;
+}
+
+.buy-now:hover {
+  background-color: #15803d;
+}
+
+/* Loading and error styling */
+.loading,
+.error,
+.not-found {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.not-found {
+  color: #374151;
+}

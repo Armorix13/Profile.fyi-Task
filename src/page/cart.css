@@ -1,0 +1,85 @@
+/* Container styling */
+.cart-container {
+  padding: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Title styling */
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Empty cart message styling */
+.empty-cart-message {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Cart item styling */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.cart-item-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin-right: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.cart-item-image:hover {
+  transform: scale(1.1);
+}
+
+/* Item details styling */
+.cart-item-details {
+  flex-grow: 1;
+}
+
+/* Link styling */
+.cart-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cart-link:hover {
+  color: #0056b3;
+}
+
+/* Proceed button styling */
+.proceed-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  display: inline-block;
+}
+
+.proceed-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.proceed-button:active {
+  transform: scale(1);
+}
